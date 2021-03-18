@@ -1,0 +1,30 @@
+{
+  "name": "s3-list-all-the-objects",
+  "version": "1.0.3",
+  "description": "A simple, small library to abstract the mechanism to fetch all the objects in a bucket (No pagination handling required) with prefix support.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified!\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mim-Armand/s3-list-all-objects.git"
+  },
+  "keywords": [
+    "aws",
+    "s3",
+    "objects",
+    "list",
+    "all",
+    "bucket"
+  ],
+  "author": "mim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mim-Armand/s3-list-all-objects/issues"
+  },
+  "homepage": "https://github.com/mim-Armand/s3-list-all-objects#readme",
+  "dependencies": {
+    "aws-sdk": "^2.865.0"
+  }
+}
