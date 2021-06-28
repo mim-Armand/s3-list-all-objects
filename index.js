@@ -8,7 +8,7 @@ const listAllObjects = async (Bucket, Prefix = "", onlyKeys = true, Continuation
   const reducedRes = onlyKeys ? res.Contents.map( k => k.Key ) : res.Contents;
   results = [ ...results, ...reducedRes];
   if(!!res.IsTruncated){
-    return await listAllObjects(Prefix, Bucket, res.NextContinuationToken, results);
+    return await listAllObjects( Bucket, Prefix, onlyKeys, res.NextContinuationToken, results);
   }
   return results;
 }

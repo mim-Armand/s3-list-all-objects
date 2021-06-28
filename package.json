@@ -1,6 +1,6 @@
 {
   "name": "s3-list-all-the-objects",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple, small library to abstract the mechanism to fetch all the objects in a bucket (No pagination handling required) with prefix support.",
   "main": "index.js",
   "scripts": {
