@@ -5,7 +5,7 @@ const listAllObjects = async (Bucket, Prefix = "", onlyKeys = true, S3Client = n
   const reducedRes = onlyKeys ? res.Contents.map( k => k.Key ) : res.Contents;
   results = [ ...results, ...reducedRes];
   if(!!res.IsTruncated){
-    return await listAllObjects( S3Client, Bucket, Prefix, onlyKeys, S3Client, res.NextContinuationToken, results);
+    return await listAllObjects( Bucket, Prefix, onlyKeys, S3Client, res.NextContinuationToken, results);
   }
   return results;
 }
